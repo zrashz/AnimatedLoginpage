@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-area">
+            <form id="login-form" class="form">
+                <h2>Login</h2>
+                <div class="form-control">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <i class="fas fa-envelope"></i>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-control">
+                    <label for="password"></label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <i class="fas fa-lock"></i>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox" id="remember-me"> Remember Me
+                    </label>
+                    <a href="#" id="forgot-password-link">Forgot Password?</a>
+                </div>
+                <button type="button" id="login-btn">Login</button>
+            </form>
+
+            <form id="reset-form" class="form hidden">
+                <h2>Reset Password</h2>
+                <div class="form-control">
+                    <label for="reset-email"></label>
+                    <input type="email" id="reset-email" placeholder="Enter your email">
+                    <i class="fas fa-envelope"></i>
+                    <span class="error-message" id="reset-email-error"></span>
+                </div>
+                <button type="button" id="reset-btn">Reset Password</button>
+                <button type="button" id="back-to-login-btn">Back to Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

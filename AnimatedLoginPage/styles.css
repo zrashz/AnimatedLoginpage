@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #cbfb0d;
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background: #717970;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-area {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.form {
+    transition: transform 0.5s ease-in-out;
+}
+
+.hidden {
+    transform: translateX(100%);
+    visibility: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-control input:focus {
+    border-color: #007BFF;
+}
+
+.form-control input:focus + label,
+.form-control input:not(:placeholder-shown) + label {
+    top: -20px;
+    left: 10px;
+    color: #007BFF;
+    font-size: 12px;
+}
+
+.form-control i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+}
+
+.form-options a {
+    color: #031529;
+    text-decoration: none;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #fa980f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #f615cd;
+}
+
+#back-to-login-btn {
+    background: #d0df08;
+    margin-top: 10px;
+}
+
+#back-to-login-btn:hover {
+    background: #5a6268;
+}
